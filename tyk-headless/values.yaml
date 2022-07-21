@@ -143,6 +143,21 @@ gateway:
       effect: NoSchedule
   affinity: {}
   extraEnvs: []
+
+  # Mount a subpath file
+  #  mounts:
+  #    - name: first-app
+  #      filename: first-app.json
+  #      mountPath: /mnt/tyk-gateway/apps/
+  #      subDir: apps
+  #    - name: second-app
+  #      filename: second-app.json
+  #      mountPath: /mnt/tyk-gateway/apps/
+  #      subDir: apps
+  #   - name: policies
+  #     filename: policies.json
+  #     mountPath: /mnt/tyk-gateway/policies/
+  #     subDir: policies
   mounts: []
 
 # If pump is enabled the Gateway will create and collect analytics data to send
